@@ -10,9 +10,14 @@ public class ToDoListView {
         scanner = new Scanner(System.in);
     }
 
-    public int choise(String choise) {
-        System.out.println(choise);
+    public int choise() {
+        System.out.println("Выберете пункт меню: ");
         return scanner.nextInt();
+    }
+
+    public String takeTask() {
+        System.out.println("Напишите задачу: ");
+        return scanner.next().toString();
     }
 
     public void showToDoList(ArrayList<String> toDoList) {
